@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="Giovannini Marcello">
+<link rel="icon" type="image/png" href="assets/logo/mt_logo.png">
+
+<title>MT home</title>
+
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+<!-- Custom CSS -->
+<link href="css/cover.css" rel="stylesheet">
+<link href="css/custom_style.css" rel="stylesheet">
+<link href="css/album.css" rel="stylesheet">
+</head>
+
+<body class="text-center">
+	<!-- COVER CONTAINER -->
+	<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+
+		<!-- HEADER 
+		<header class="masthead mb-auto">
+			<div class="inner">
+				<h3 class="masthead-brand">
+					<img src="assets/logo/mt_logo.png" width="60" height="40">
+				</h3>
+				<nav class="nav nav-masthead justify-content-center">
+					<a class="nav-link active" href="#">Home</a> <a class="nav-link"
+						href="#" data-toggle="modal" data-target="#contactModal">Contact</a>
+					<a class="nav-link" href="#">Login</a>
+				</nav>
+			</div>
+		</header>-->
+		<header>
+			<div class="collapse bg-dark" id="navbarHeader">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-8 col-md-7 py-4">
+							<h4 class="text-white">About</h4>
+							<p class="text-muted">Add some information about the album
+								below, the author, or any other background context. Make it a
+								few sentences long so folks can pick up some informative
+								tidbits. Then, link them off to some social networking sites or
+								contact information.</p>
+						</div>
+						<div class="col-sm-4 offset-md-1 py-4">
+							<h4 class="text-white">Contact</h4>
+							<ul class="list-unstyled">
+								<li><a href="#" class="text-white">Follow on Twitter</a></li>
+								<li><a href="#" class="text-white">Like on Facebook</a></li>
+								<li><a href="#" class="text-white">Email us</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="navbar navbar-dark box-shadow" style="background-color:#333">
+				<div class="container d-flex justify-content-between">
+					<a href="#" class="navbar-brand d-flex align-items-center"> 
+						<img src="assets/logo/mt_logo.png" width="50" height="50">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse"
+						data-target="#navbarHeader" aria-controls="navbarHeader"
+						aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				</div>
+			</div>
+		</header>
+
+		<!-- MAIN -->
+		<main role="main" class="inner cover" style="margin-top: 6em">
+		<h1 class="cover-heading">Music Timeline</h1>
+		<p class="lead pb-2">The Music Of Your Life</p>
+		<form class="form-inline justify-content-center" id="indexSearchForm">
+			<input class="form-control mr-sm-2" id="indexInputYear" type="search"
+				placeholder="Search" aria-label="Search" data-toggle="tooltip"
+				data-placement="bottom" title="Insert Year from 1980" autofocus>
+			<button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+		</form>
+		</main>
+
+		<!-- FOOTER -->
+		<footer class="mastfoot mt-auto">
+			<div class="inner">
+				<p>
+					by <a href="#">Marcello Giovannini</a>
+				</p>
+			</div>
+		</footer>
+	</div>
+
+	<!-- Bootstrap core JavaScript -->
+
+	<!-- jQuery library -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+	<!-- Custom script -->
+	<script src="js/search-single.js"></script>
+
+</body>
+
+<!-- CONTACT MODAL -->
+<div class="modal" tabindex="-1" role="dialog" id="contactModal"
+	style="color: #000; text-shadow: none">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Contact form</h5>
+				<button type="button" class="close" data-dismiss="modal"
+					aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<form>
+					<div class="form-group">
+						<label for="fName" class="sr-only">First Name</label> <input
+							type="text" class="form-control" id="fName"
+							placeholder="Insert First Name" required autofocus>
+					</div>
+					<div class="form-group">
+						<label for="lName" class="sr-only">LastName</label> <input
+							type="password" class="form-control" id="lName"
+							placeholder="Insert Last Name" required>
+					</div>
+					<div class="form-group">
+						<label for="email" class="sr-only">Email</label> <input
+							type="password" class="form-control" id="email"
+							placeholder="Insert Email" required>
+					</div>
+					<div class="form-group">
+						<label for="question" class="sr-only">Your Question</label>
+						<textarea class="form-control" rows="5" id="question"></textarea>
+					</div>
+					<div class="form-group">
+						<div class="form-check">
+							<label class="form-check-label" for="mList"> <input
+								class="form-check-input" type="checkbox" id="mList">
+								Join Our Mailing List
+							</label>
+						</div>
+					</div>
+					<div class="form-group">
+						<button type="submit" class="btn btn-default"
+							style="background-color: #d32f2f; color: #fff">Send</button>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer"></div>
+		</div>
+	</div>
+</div>
+
+</html>

@@ -1,0 +1,40 @@
+.tooltip .tooltip-inner {
+  background-color:#38393a;
+}
+
+h1.jumbotron-heading {
+	font-size: 4rem;
+}
+
+#usrLogin, #pwdLogin, #usrSignup, #pwdSignup, #pwdConfirm, #emailSignup {
+	border-radius: 0;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #fff inset;
+}
+
+#loginForm button, #signupForm button {
+	width:100%;
+}
+
+#accordion, .card-header {
+	background-color: inherit; 
+	border: none;
+}
+
+#logout, #singleTitle, .alert {
+	display:none;
+}
+
+.form-text, .form-check-label{
+	color:#fff;
+}
+
+.btn-danger {
+	background-color: #e53935;
+}
+
+.form-check-label {
+	font-size:0.8rem";
+}

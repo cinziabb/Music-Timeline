@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="Giovannini Marcello">
+<link rel="icon" type="image/png" href="assets/logo/mt_logo.png">
+
+<title>MusicTimeline</title>
+
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+<!-- Custom CSS -->
+<link href="css/album.css" rel="stylesheet">
+<link href="css/custom-style.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<!--  HEADER -->
+	<!---------------------------------------------------------------------------------------------------------->
+	<header>
+		<div class="collapse bg-dark" id="navbarHeader">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-8 col-md-7 py-4">
+						<h5 class="text-white mt-5">About</h5>
+						<p class="text-white">
+							Has music accompanied your life? Check out the tracks in the
+							first places in world ranking of a given year. Listen and vote
+							for the covers of the original song you like.<br> Are you an
+							artist? Make your covers known to a wider audience.<br> It's
+							simple. <strong>Just Register!</strong>
+						</p>
+					</div>
+
+					<!-- ACCORDION -->
+					<!------------------------------------------------------------------------------------------>
+					<div class="col-sm-4 offset-md-1 py-4">
+						<div id="accordion">
+							<div class="card card-header">
+								<h5 class="text-white mt-5">Enter</h5>
+								<ul class="list-unstyled">
+									<!-- <li><a href="#" class="text-white">Follow on Twitter</a></li> -->
+									<li><a href="#signupDiv" class="text-white"
+										data-toggle="collapse" aria-expanded="true"
+										aria-controls="signupDiv" data-target="#signupDiv">Register</a></li>
+									<li><a href="#loginDiv" class="text-white" id="login"
+										data-toggle="collapse" aria-expanded="true"
+										aria-controls="loginDiv" data-target="#loginDiv">Log In</a></li>
+									<li><a href="#" class="text-white" id="logout"
+										data-toggle="collapse" aria-expanded="true">Log Out</a></li>
+								</ul>
+								<!-- SIGNUP -->
+								<!------------------------------------------------------------------------------->
+								<div class="collapse" id="signupDiv" data-parent="#accordion">
+									<div class="card card-body card-header">
+										<form id="signupForm">
+											<div class="form-group">
+												<label for="usrSignup" class="sr-only">Username</label> <input
+													type="text" class="form-control white-text" id="usrSignup"
+													placeholder="Username" aria-describedby="usernameHelp"
+													required autofocus> <small id="usernameHelp"
+													class="form-text"> Min 3 chars - Max 30 chars - No
+													blank spaces</small>
+											</div>
+											<div class="form-group">
+												<label for="pwdSignup" class="sr-only">Password</label> <input
+													type="password" class="form-control white-text"
+													id="pwdSignup" placeholder="Password"
+													aria-describedby="passwordHelp" required> <small
+													id="passwordHelp" class="form-text"> Min 8 chars -
+													Max 30 chars - No blank spaces</small>
+											</div>
+											<div class="form-group">
+												<label for="pwdConfirm" class="sr-only">Confirm
+													Password</label> <input type="password" class="form-control"
+													id="pwdConfirm" placeholder="Confirm Password" required
+													autocomplete="off">
+											</div>
+											<div class="form-group">
+												<label for="emailSignup" class="sr-only">Email</label> <input
+													type="email" class="form-control" id="emailSignup"
+													placeholder="Email" required>
+											</div>
+											<div class="form-check mb-2">
+												<input type="checkbox" class="form-check-input"
+													id="roleSignup"> <label class="form-check-label"
+													for="roleSignup">Are you an Artist?</label>
+											</div>
+											<button type="submit" class="btn btn-outline-light">Sign
+												Up</button>
+											<small class="text-white">By Sign up, you agree the
+												MusicTimeline <a href="#" class="text-white">Terms of
+													use</a>
+											</small>
+										</form>
+									</div>
+								</div>
+								<!-- LOGIN -->
+								<div class="collapse" id="loginDiv" data-parent="#accordion">
+									<div class="card card-body card-header">
+										<form id="loginForm">
+											<div class="form-group">
+												<label for="usrLogin" class="sr-only">Username</label> <input
+													type="text" class="form-control" id="usrLogin"
+													placeholder="Username" required autofocus>
+											</div>
+											<div class="form-group">
+												<label for="pwdLogin" class="sr-only">Password</label> <input
+													type="password" class="form-control" id="pwdLogin"
+													placeholder="Password" required autocomplete="off">
+											</div>
+											<button type="submit" class="btn btn-outline-light">Log
+												In</button>
+										</form>
+										<small><a href="#" class="form-text text-white">Forgot
+												password?</a></small>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--  NAVBAR -->
+		<!--------------------------------------------------------------------------------------------------------->
+		<div class="navbar navbar-dark bg-dark box-shadow fixed-top">
+			<div class="container d-flex justify-content-between">
+				<a href="#" class="navbar-brand d-flex align-items-center"> <img
+					src="assets/logo/mt_logo.png" width="20" height="20"> <strong>&nbsp;MusicTimeline</strong>
+				</a>
+				<a href="#" class="d-flex align-items-right text-white" id="loggedUser"></a>
+				<button class="navbar-toggler" id="hamburger" type="button" data-toggle="collapse"
+					data-target="#navbarHeader" aria-controls="navbarHeader"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+		</div>
+	</header>
+	
+	<!-- MAIN -->
+	<main role="main"> 
+	<!--------------------------------------------------------------------------------------------------------->
+	
+	<!-- JUMBOTRON -->
+	<!--------------------------------------------------------------------------------------------------------->
+	<section class="jumbotron text-center">
+		<div class="container">
+			<h1 class="jumbotron-heading">MusicTimeline</h1>
+			<h3 class="jumbotron-heading">The music of your life</h3>
+			<p class="lead text-muted">
+				Choose the year and find the songs in the top of the charts<br>It's
+				easy! Enter the year and click on Search
+			</p>
+				<form class="form-inline justify-content-center" id="indexSearchForm">
+					<input class="form-control mr-sm-2" id="indexInputYear"
+						type="search" placeholder="Search" aria-label="Search"
+						data-toggle="tooltip" data-placement="bottom"
+						title="Insert year since 1980" autofocus>
+					<button class="btn btn-danger my-2 my-sm-0" type="submit">Search</button>
+				</form>
+		</div>
+	</section>
+	<!-- ALBUM -->
+	<!--------------------------------------------------------------------------------------------------------->
+	<div class="album py-5 bg-light">
+		<h3 id="singleTitle" class="text-center mt-3 mb-3"></h3>
+		<div class="container">
+			<div class="row" id="indexRow"></div>
+		</div>
+	</div>
+	</main>
+	<!-- FOOTER -->
+	<!--------------------------------------------------------------------------------------------------------->
+	<footer class="text-muted">
+		<div class="container">
+			<p class="float-right">
+				<a href="#">Back to top</a>
+			</p>
+			<p>MusicTimeline is &copy; Giovannini Marcello, class 5B INFO,
+				ITIS Pininfarina</p>
+			<p>
+				New to MusicTimeline? Read our <a href="#">getting
+					started guide</a>.
+			</p>
+		</div>
+	</footer>
+
+	<!-- Bootstrap core JavaScript -->
+	<!--------------------------------------------------------------------------------------------------------->
+
+	<!-- jQuery library -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.min.js"></script>
+
+	<!-- GOOGLE TRANSLATE -->
+	<!--------------------------------------------------------------------------------------------------------->
+	<div id="google_translate_element"></div>
+	<script type="text/javascript">
+		function googleTranslateElementInit() {
+			new google.translate.TranslateElement({
+				pageLanguage : 'en',
+				layout : google.translate.TranslateElement.InlineLayout.SIMPLE
+			}, 'google_translate_element');
+		}
+	</script>
+	<script type="text/javascript"
+		src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+	<!-- Custom script -->
+	<!--------------------------------------------------------------------------------------------------------->
+	<script src="js/jq-functions.js"></script>
+	<script src="js/js-functions.js"></script>
+
+</body>
+
+<!-- MESSAGE MODAL -->
+<!--------------------------------------------------------------------------------------------------------->
+<div class="modal" id="messageModal" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header bg-light">
+				<img src="assets/logo/mt_logo.png" width="30" height="30" class="mr-3">
+				<h5 class="modal-title">Error</h5>
+				<button type="button" class="close" data-dismiss="modal"
+					aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<p id="modalMsg"></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+</html>
